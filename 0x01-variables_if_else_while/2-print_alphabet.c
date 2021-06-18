@@ -10,13 +10,10 @@
 
 int main(void)
 {
-char c = 'a';
-do
-{
-putchar(c'\n');
-c++;
+char c ;
+for (c ='a'; c <= 'z')
+putchar(c);
 putchar('\n');
-}
-while (c <= 'z');
+c++;
 return (0);
 }
