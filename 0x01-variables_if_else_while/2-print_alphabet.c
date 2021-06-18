@@ -10,13 +10,12 @@
 
 int main(void)
 {
-char c= 'a';
+char c = 'a';
 do
 {
-putchar(c);
-c++;
+putchar(c; c++);
 putchar('\n');
 }
-while(c <= 'z');
+while (c <= 'z');
 return (0);
 }
