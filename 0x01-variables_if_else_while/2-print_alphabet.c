@@ -13,7 +13,8 @@ int main(void)
 char c = 'a';
 do
 {
-putchar(c; c++);
+putchar(c'\n');
+c++;
 putchar('\n');
 }
 while (c <= 'z');
