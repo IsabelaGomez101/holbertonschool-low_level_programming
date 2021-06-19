@@ -11,9 +11,13 @@
 
 int main(void)
 {
-int digit;
-for (digit = 0; digit < 10; digit++)
-printf("%i", digit);
+int i;
+i = 0;
+while (i <= 10)
+{
+printf("%i", i);
+i++;
+}
 putchar('\n');
 return (0);
 }
