@@ -14,9 +14,9 @@ char c;
 c = 'a';
 while('a' <= 'z')
 {
-putchar(c'\n');
+putchar(c);
 c++;
-}
 putchar('\n');
+}
 return (0);
 }
