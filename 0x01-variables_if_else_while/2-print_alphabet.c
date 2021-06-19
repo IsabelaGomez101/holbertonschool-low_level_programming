@@ -11,8 +11,8 @@
 int main(void)
 {
 char c;
-c = a;
-while(a <= z)
+c = 'a';
+while('a' <= 'z')
 {
 putchar(c);
 c++;
