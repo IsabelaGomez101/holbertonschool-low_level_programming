@@ -11,13 +11,17 @@
 int main(void)
 {
 char c;
-while (c = 'a'; c <= 'z')
+c = 'a';
+while (c <= 'z')
 {
 putchar(c);
+c++;
 }
-while (c = 'A'; c <= 'Z')
+c = 'A';
+while (c <= 'Z')
 {
 putchar(c);
+c++;
 }
 putchar('\n');
 return (0);
