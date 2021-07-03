@@ -1,8 +1,7 @@
 #include "holberton.h"
 
 /**
- * *_strcat - function that concatenates two strings.
- * it will use at most n bytes from src 
+ * *_strncat - function that concatenates two strings.
  * @dest: string.
  * @src: string.
  * @n: bytes.
