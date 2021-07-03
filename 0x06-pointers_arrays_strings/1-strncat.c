@@ -2,6 +2,7 @@
 
 /**
  * *_strcat - function that concatenates two strings.
+ * it will use at most n bytes from src 
  * @dest: string.
  * @src: string.
  * @n: bytes.
@@ -9,10 +10,11 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-int i;
+int i = 0;
 int j = 0;
-for (i = 0; dest[i] != '\0'; i++)
+while (dest[i] != '\0')
 {
+i++;
 }
 while (j < n && src[j] != '\0')
 {
