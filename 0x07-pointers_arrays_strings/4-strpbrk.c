@@ -21,7 +21,7 @@ for (j = 0; j <= i; j++)
 {
 for (a = 0; accept[a] != '\0'; a++)
 {
-if (accept[a] == s[j])
+if (s[j] == accept[a])
 return (&s[j]);
 }
 }
