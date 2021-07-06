@@ -16,5 +16,5 @@ while (i < n)
 s[i] = b;
 i++;
 }
-return (0);
+return (s);
 }
