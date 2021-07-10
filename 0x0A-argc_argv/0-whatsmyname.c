@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "holberton.h"
 
 /**
  * main - program that prints its name.
@@ -8,12 +7,12 @@
  * Return: 0.
  */
 
-int main(int argc, char *argv[])
+int main(int argc __attribute__ ((unused)), char *argv[])
 {
-int i = 0;
-for (; i < argc; i++)
+int i;
+for (i = 0; i < 1; i++)
 {
-printf("%s \n", argv[0]);
+printf("%s\n", argv[i]);
 }
 return (0);
 }
