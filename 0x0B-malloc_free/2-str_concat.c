@@ -15,11 +15,11 @@ int j;
 char *sc;
 if (s1 == 0)
 {
-s1 = "";
+s1 = NULL;
 }
 if (s2 == 0)
 {
-s2 = "";
+s2 = NULL;
 }
 if (s1 != 0)
 for (i = 0; s1[i] != '\0'; i++)
