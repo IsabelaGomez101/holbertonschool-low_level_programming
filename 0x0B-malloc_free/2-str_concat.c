@@ -15,8 +15,7 @@ int j;
 char *sc;
 if (s1 == 0 && s2 == 0)
 {
-s1 = "";
-s2 = "";
+return (0);
 }
 for (i = 0; s1[i] != '\0'; i++)
 {
