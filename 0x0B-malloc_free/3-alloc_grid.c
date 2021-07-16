@@ -14,7 +14,7 @@ int **array;
 int i;
 int j;
 
-if (width < 1 || height < 1)
+if (width <= 0 || height <= 0)
 {
 return (NULL);
 }
@@ -25,7 +25,7 @@ return (NULL);
 }
 for (j = 0; j < height; j++)
 {
-array[j] = malloc(sizeof(int *) * width);
+array[j] = malloc(sizeof(int) * width);
 if (array[j] == NULL)
 {
 for (j = j - 1; j >= 0; j--)
