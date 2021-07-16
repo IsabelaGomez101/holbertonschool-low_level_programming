@@ -41,9 +41,9 @@ for (i = 0; s1[i] != 0; i++)
 {
 snc[i] = s1[i];
 }
-for (j = 0; j < n; j++)
+for (j = 0; s2[j] != '\0'; j++)
 {
-if (s2[j] != '\0')
+if (j < n)
 {
 snc[i] = s2[j];
 i++;
