@@ -19,7 +19,7 @@ if (width <= 0 || height <= 0)
 return (NULL);
 }
 array = malloc(sizeof(int *) * height);
-if (!(array))
+if (array == NULL)
 {
 return (NULL);
 }
@@ -37,8 +37,6 @@ return (NULL);
 }
 }
 for (j = 0; i < width; i++)
-{
 array[j][i] = 0;
-}
 return (array);
 }
