@@ -19,14 +19,14 @@ if (width <= 0 || height <= 0)
 return (NULL);
 }
 array = malloc(sizeof(int *) * height);
-if (array == NULL)
+if (!(array))
 {
 return (NULL);
 }
 for (j = 0; j < height; j++)
 {
 array[j] = malloc(sizeof(int) * width);
-if (array[j] == NULL)
+if (!(array[j]))
 {
 for (j = j - 1; j >= 0; j--)
 {
