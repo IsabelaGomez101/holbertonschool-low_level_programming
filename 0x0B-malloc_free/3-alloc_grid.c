@@ -16,7 +16,7 @@ int j;
 
 if (width <= 0 || height <= 0)
 {
-return (0);
+return (NULL);
 }
 array = malloc(sizeof(int *) * height);
 if (!(array))
@@ -31,9 +31,9 @@ if (!(array[j]))
 while (--j >= 0)
 {
 free(array[j]);
+}
 free(array);
 return (NULL);
-}
 }
 }
 for (j = 0; j < height; j++)
