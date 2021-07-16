@@ -14,7 +14,7 @@ int **array = NULL;
 int i;
 int j;
 
-if (width < 1 || height < 1)
+if (width <= 0 || height <= 0)
 {
 return (0);
 }
@@ -31,9 +31,9 @@ if (!(array[j]))
 while (--j >= 0)
 {
 free(array[j]);
-}
 free(array);
 return (NULL);
+}
 }
 }
 for (j = 0; j < height; j++)
