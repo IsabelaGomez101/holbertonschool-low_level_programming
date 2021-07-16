@@ -36,12 +36,9 @@ free(array);
 return (NULL);
 }
 }
-for (j = 0; j < height; j++)
-{
-for (i = 0; i < width; i++)
+for (j = 0; i < width; i++)
 {
 array[j][i] = 0;
-}
 }
 return (array);
 }
