@@ -27,7 +27,12 @@ if (s1 != 0)
 for (i = 0; s1[i] != '\0'; i++)
 {
 }
-snc = malloc(sizeof(char) * (i + n + 1));
+j = 0;
+while (j < n && s2[j] != '\0')
+{
+	j++;
+}
+snc = malloc(sizeof(char) * (i + j + 1));
 if (snc == 0)
 {
 return (0);
