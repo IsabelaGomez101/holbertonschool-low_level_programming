@@ -24,7 +24,7 @@ return (NULL);
 }
 while (i < size * nmemb)
 {
-*(s + i) = 0;
+s[i] = 0;
 i++;
 }
 return (s);
