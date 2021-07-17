@@ -27,13 +27,10 @@ if (array == NULL)
 {
 return (NULL);
 }
-for (j = 0; min <= max; j++)
-{
-if (j < i)
+for (j = 0; min <= max && j < i; j++)
 {
 array[j] = min;
 min++;
-}
 }
 return (array);
 }
