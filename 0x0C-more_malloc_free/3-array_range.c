@@ -18,19 +18,20 @@ if (min > max)
 {
 return (NULL);
 }
-for (i = min; i <= max; i++)
-{
-}
+i = (max - min) + 1;
 array = malloc(sizeof(int) * i);
 {
 if (array == NULL)
 {
 return (NULL);
 }
-for (j = 0; min <= max && j < i; j++)
+for (j = 0; j < i; j++)
+{
+if (min <= max)
 {
 array[j] = min;
 min++;
+}
 }
 return (array);
 }
