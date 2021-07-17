@@ -29,7 +29,7 @@ for (j = 0; av[i][j] != '\0'; j++)
 s = s + j;
 }
 s++;
-str = malloc(sizeof(char) * s);
+str = malloc(sizeof(char) * s + ac);
 if (str == NULL)
 {
 return (NULL);
