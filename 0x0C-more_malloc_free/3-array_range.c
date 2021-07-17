@@ -27,7 +27,7 @@ if (array == NULL)
 {
 return (NULL);
 }
-for (j = 0; min <= max; j++)
+for (j = 0; j <= max; j++)
 {
 array[j] = min;
 min++;
