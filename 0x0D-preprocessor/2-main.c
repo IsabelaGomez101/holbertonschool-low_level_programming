@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "holberton.h"
 
 /**
  * main - program that prints the name of the file it was compiled
@@ -8,6 +7,6 @@
 
 int main(void)
 {
-printf("%s\n", FILENAME);
+printf("%s\n", __FILE__);
 return (0);
 }
