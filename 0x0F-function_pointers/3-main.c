@@ -16,13 +16,14 @@ int calc;
 char *operator = argv[2];
 if (argc != 4)
 {
-printf("Error\n");
+printf("Error98\n");
+printf("%d\n", argc);
 exit(98);
 }
-if (*operator != '+' && *operator != '-' && *operator != '*'
-&& *operator != '/' && *operator != '%')
+if ((*operator != '+' && *operator != '-' && *operator != '*'
+&& *operator != '/' && *operator != '%') || operator[1] != '\0')
 {
-printf("Error\n");
+printf("Error99\n");
 exit(99);
 }
 num1 = atoi(argv[1]);
