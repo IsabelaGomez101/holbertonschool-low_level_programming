@@ -18,9 +18,9 @@ va_start(strings, n);
 for (i = 0; i < n; i++)
 {
 str = va_arg(strings, char*);
-if (str == NULL)
+if (str == 0)
 {
-printf("nil");
+printf("(nil)");
 }
 if (i == (n - 1) || separator == NULL)
 {
