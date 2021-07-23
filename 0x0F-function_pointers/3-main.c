@@ -21,6 +21,11 @@ if (argc > 4 || argc < 4)
 printf("Error\n");
 exit(98);
 }
+if (operator[1] != '\0')
+{
+printf("Error\n");
+exit(99);
+}
 num1 = atoi(argv[1]);
 num2 = atoi(argv[3]);
 f = get_op_func(operator);
