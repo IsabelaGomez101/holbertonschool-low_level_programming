@@ -48,6 +48,7 @@ void p_str(va_list arg)
 	if (s == NULL)
 	{
 		printf("(nil)");
+		return;
 	}
 	else
 	{
@@ -94,7 +95,6 @@ void print_all(const char *const format, ...)
 		}
 		i++;
 	}
-
-	printf("\n");
 	va_end(arg);
+	printf("\n");
 }
