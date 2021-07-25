@@ -80,7 +80,7 @@ void print_all(const char *const format, ...)
 
 	va_start(arg, format);
 
-	while (format[i] != '\0')
+	while (format && format[i] != '\0')
 	{
 		j = 0;
 		while (ptf[j].tp != NULL)
