@@ -18,8 +18,8 @@ temp2 = *head;
 	while (temp2 != NULL)
 	{
 		temp = temp2;
-		free(temp);
 		temp2 = temp2->next;
+		free(temp);
 	}
 	*head = NULL;
 }
