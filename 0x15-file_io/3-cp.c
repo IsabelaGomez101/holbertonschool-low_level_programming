@@ -60,13 +60,13 @@ close1 = close(fd);
 if (close1 == -1)
 {
 exit(100);
-dprintf(2, "Error: Can't close fd %i\n", fd);
+dprintf(2, "Error: Can't close fd %i\n", close1);
 }
 close2 = close(fd2);
 if (close2 == -1)
 {
 exit(100);
-dprintf(2, "Error: Can't close fd %i\n", fd2);
+dprintf(2, "Error: Can't close fd %i\n", close2);
 }
 }
 
