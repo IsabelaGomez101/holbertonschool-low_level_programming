@@ -11,7 +11,7 @@
 
 void fail_error(int fd, int e, char *file)
 {
-if (fd == -1)
+if (fd < 0)
 {
 if (e == 98)
 {
