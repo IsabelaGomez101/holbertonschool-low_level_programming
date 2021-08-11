@@ -55,7 +55,7 @@ fail_error(fd, e1, file_from);
 re_write = write(fd2, buf, re_read);
 /**write and save to destination file*/
 fail_error(fd, e2, file_to);
-} while (re_write >= 1024);
+} while (re_write == 1024);
 close1 = close(fd);
 if (close1 == -1)
 {
