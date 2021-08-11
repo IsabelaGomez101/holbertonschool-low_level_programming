@@ -15,13 +15,13 @@ if (fd == -1)
 {
 if (e == 98)
 {
+dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file);
 exit(98);
-dprintf(2, "Error: Can't read from file %s\n", file);
 }
 if (e == 99)
 {
+dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file);
 exit(99);
-dprintf(2, "Error: Can't write to %s\n", file);
 }
 }
 }
@@ -59,14 +59,14 @@ fail_error(re_write, e2, file_to);
 close1 = close(fd);
 if (close1 == -1)
 {
-exit(100);
 dprintf(2, "Error: Can't close fd %i\n", close1);
+exit(100);
 }
 close2 = close(fd2);
 if (close2 == -1)
 {
-exit(100);
 dprintf(2, "Error: Can't close fd %i\n", close2);
+exit(100);
 }
 }
 
