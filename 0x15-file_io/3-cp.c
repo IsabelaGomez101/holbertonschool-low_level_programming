@@ -11,7 +11,7 @@
 
 void fail_error(int fd, int e, char *file)
 {
-if (fd < 0)
+if (fd == -1)
 {
 if (e == 98)
 {
@@ -47,14 +47,14 @@ fd = open(file_from, O_RDONLY);
 fail_error(fd, e1, file_from);
 /*create destination file*/
 fd2 = open(file_to, O_CREAT | O_WRONLY | O_TRUNC, 0664);
-fail_error(fd, e2, file_to);
+fail_error(fd2, e2, file_to);
 do {
 /**read the file*/
 re_read = read(fd, buf, 1024);
-fail_error(fd, e1, file_from);
-re_write = write(fd2, buf, re_read);
+fail_error(re_read, e1, file_from);
 /**write and save to destination file*/
-fail_error(fd, e2, file_to);
+re_write = write(fd2, buf, re_read);
+fail_error(re_write, e2, file_to);
 } while (re_write == 1024);
 close1 = close(fd);
 if (close1 == -1)
