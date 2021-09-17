@@ -29,13 +29,17 @@ if (h != NULL)
 {
 	while (current != NULL)
 	{
-		if (len == idx - 1)
+		if (idx == 0)
 		{
-			temp = current->next;
-			current->next = new_node;
-			new_node->next = temp;
-			new_node->prev = current;
-			temp->prev = new_node;
+			return (add_dnodeint(h, n));
+		}
+		if (len == idx)
+		{
+			temp = current->prev;
+			current->prev = new_node;
+			new_node->prev = temp;
+			new_node->next = current;
+			temp->next = new_node;
 			return (new_node);
 		}
 		current = current->next;
