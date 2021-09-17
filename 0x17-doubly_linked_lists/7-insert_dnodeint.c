@@ -45,6 +45,8 @@ if (h != NULL)
 		current = current->next;
 		len++;
 	}
+	if (len == idx)
+	return (add_dnodeint_end(h, n));
 }
 return (NULL);
 }
